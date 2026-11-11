@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы обратной связи</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Кот Коржик</h1>
+      <p>Учебный сайт о моём коте</p>
+    </header>
+
+    <nav>
+      <a href="index.html"
+        ><img
+          src="img/коржик (5).jpg"
+          alt="На главную"
+          width="30"
+          height="30"
+          style="object-fit: cover"
+      /></a>
+      | <a href="index.html">Главная</a> | <a href="about.html">О Коржике</a> |
+      <a href="about.html#food">Любимая еда Коржика</a> |
+      <a href="gallery.html">Галерея и таблица</a> |
+      <a href="forms.html" class="active">Формы</a> |
+      <a href="dom_js.html">DOM_JS</a> |
+      <a href="latin.html">Изменение кириллицы</a> |
+      <a href="algorithm.html">Алгоритм</a> |
+      <a href="https://t.me/rrrimnom" target="_blank" rel="noopener"
+        >Хочу увидеть больше фото и видео с Коржиком!</a
+      >
+    </nav>
+    <hr />
+
+    <main>
+      <h2 id="top">Формы обратной связи</h2>
+
+      <p>
+        <a href="#contacts">Контактные данные</a> |
+        <a href="#review">Отзыв</a> | <a href="#top">К началу</a>
+      </p>
+
+      <h2 id="contacts">1. Контактные данные</h2>
+
+      <form
+        action="https://www.google.com"
+        id="UserEnter1"
+        name="UserEnter1"
+        target="_blank"
+      >
+        <p>Фамилия: <input type="text" name="surname" required /></p>
+        <p>Имя: <input type="text" name="first_name" required /></p>
+        <p>Группа: <input type="text" name="group" value="Группа-01" /></p>
+        <p>
+          Мобильный телефон:
+          <input type="tel" name="phone" placeholder="+7 900 000-00-00" />
+        </p>
+        <p>Электронная почта: <input type="email" name="email" required /></p>
+        <p>
+          Дата отправки сообщения:
+          <input type="date" name="send_date" value="2026-11-11" />
+        </p>
+        <p>
+          <input type="submit" value="Отправить контактные данные" />
+          <input type="reset" value="Очистить" />
+        </p>
+      </form>
+
+      <h2 id="review">2. Ваш отзыв о Коржике</h2>
+      <form
+        action="https://www.google.com"
+        id="UserEnter2"
+        name="UserEnter2"
+        target="_blank"
+      >
+        <input type="hidden" name="form_type" value="cat_review" />
+        <p>
+          Ваше имя:
+          <input type="text" name="reviewer_name" value="Гость" required />
+        </p>
+
+        <p>
+          Пароль для редактирования отзыва:
+          <input type="password" name="review_password" size="9" value="" />
+        </p>
+
+        <p>
+          Оценка Коржика от 1 до 10:
+          <input type="number" name="rating" min="1" max="10" value="10" />
+        </p>
+
+        <p>
+          Какие вкусняшки вы бы дали Коржику?<br />
+          <input type="radio" name="treats" value="Дримис" checked />
+          Дримис<br />
+          <input type="radio" name="treats" value="Колбаски" /> Колбаски<br />
+          <input type="radio" name="treats" value="Звёздочки" /> Звёздочки<br />
+        </p>
+
+        <p>
+          Коржик вам показался:<br />
+          <input type="checkbox" name="impression_cute" value="Милым" checked />
+          Милым<br />
+          <input type="checkbox" name="impression_beautiful" value="Красивым" />
+          Красивым<br />
+          <input type="checkbox" name="impression_playful" value="Озорным" />
+          Озорным<br />
+          <input type="checkbox" name="impression_naughty" value="Вредным" />
+          Вредным<br />
+        </p>
+
+        <p>
+          Дата отзыва:
+          <input type="date" name="review_date" value="2026-11-11" />
+        </p>
+
+        <p>
+          Комментарий:
+          <input type="text" name="comment" value="Очень милый котик!" />
+        </p>
+
+        <p>
+          <input type="submit" value="Отправить отзыв" />
+          <input type="reset" value="Очистить" />
+        </p>
+      </form>
+
+      <p><a href="#top">К началу страницы ↑</a></p>
+    </main>
+    <footer>
+      <hr />
+      <p>Учебный проект по HTML и JavaScript.</p>
+      <p><a href="index.html">Вернуться на главную</a></p>
+    </footer>
+  </body>
+</html>

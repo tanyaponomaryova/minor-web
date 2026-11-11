@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Кот Коржик</h1>
+      <p>Учебный сайт о моём коте</p>
+    </header>
+
+    <nav>
+      <a href="index.html"
+        ><img
+          src="img/коржик (5).jpg"
+          alt="На главную"
+          width="30"
+          height="30"
+          style="object-fit: cover"
+      /></a>
+      | <a href="index.html">Главная</a> | <a href="about.html">О Коржике</a> |
+      <a href="about.html#food">Любимая еда Коржика</a> |
+      <a href="gallery.html">Галерея и таблица</a> |
+      <a href="forms.html">Формы</a> | <a href="dom_js.html">DOM_JS</a> |
+      <a href="latin.html">Изменение кириллицы</a> |
+      <a href="algorithm.html" class="active">Алгоритм</a> |
+      <a href="https://t.me/rrrimnom" target="_blank" rel="noopener"
+        >Хочу увидеть больше фото и видео с Коржиком!</a
+      >
+    </nav>
+    <hr />
+
+    <main>
+      <!-- МОЙ НОМЕР -- 25 -- 1007 -->
+      <h2 id="top">Решение алгоритмической задачи</h2>
+      <p>
+        <a href="#task">Условие</a> | <a href="#solution">Решение</a> |
+        <a href="#top">К началу</a>
+      </p>
+
+      <h2 id="task">Условие задачи</h2>
+      <p name="formulation">
+        Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и
+        радиусом основания R. Определить, поместится ли жидкость объёма M в
+        первую ёмкость, во вторую, в обе.
+      </p>
+
+      <p>Объёмы ёмкостей: V1 = A³, V2 = π·R²·H.</p>
+      <p>Жидкость помещается в первую ёмкость, если M ≤ V1.</p>
+      <p>Во вторую, если M ≤ V2.</p>
+      <p>В обе (если разлить по двум ёмкостям), если M ≤ V1 + V2.</p>
+
+      <h2 id="solution">Проверка решения</h2>
+      <form
+        action="https://www.google.com"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
+      >
+        <ul>
+          <li>
+            A (ребро куба):
+            <input id="A" name="A" type="number" step="any" value="10" />
+          </li>
+          <li>
+            H (высота цилиндра):
+            <input id="H" name="H" type="number" step="any" value="20" />
+          </li>
+          <li>
+            R (радиус основания):
+            <input id="R" name="R" type="number" step="any" value="5" />
+          </li>
+          <li>
+            M (объём жидкости):
+            <input id="M" name="M" type="number" step="any" value="1500" />
+          </li>
+          <li>
+            Объёмы ёмкостей:
+            <input
+              id="volumes"
+              name="volumes"
+              value="не определены"
+              size="30"
+            />
+          </li>
+          <li>
+            В первую ёмкость:
+            <input id="result1" name="result1" value="не определен" />
+          </li>
+          <li>
+            Во вторую ёмкость:
+            <input id="result2" name="result2" value="не определен" />
+          </li>
+          <li>
+            В обе ёмкости:
+            <input id="result3" name="result3" value="не определен" />
+          </li>
+          <li>
+            Действие: <input id="verify" type="button" value="Проверить" />
+            <input type="submit" value="Отправить на сервер" />
+          </li>
+        </ul>
+      </form>
+      <p><a href="#top">К началу страницы ↑</a></p>
+    </main>
+    <footer>
+      <hr />
+      <p>Учебный проект по HTML и JavaScript.</p>
+      <p><a href="index.html">Вернуться на главную</a></p>
+    </footer>
+    <script src="./scripts/task.js"></script>
+  </body>
+</html>

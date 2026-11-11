@@ -1,0 +1,75 @@
+/* #region общее */
+a:hover {
+  background-color: yellow;
+}
+
+a.active {
+  background-color: red;
+}
+/* #endregion */
+
+/* #region секция с паспортом и настройки положения текста */
+section.passport {
+  position: relative;
+  width: 378px;
+  height: 529px;
+  background-image: url(img/pass.jpg);
+  background-repeat: no-repeat;
+}
+section.passport div {
+  position: absolute;
+  /* отключаем перенос слов на новую строку */
+  white-space: nowrap;
+}
+.fam {
+  left: 150px;
+  top: 311px;
+}
+.imya {
+  left: 150px;
+  top: 333px;
+}
+.otc {
+  left: 150px;
+  top: 354px;
+}
+.pol {
+  left: 150px;
+  top: 372px;
+}
+.date {
+  left: 222px;
+  top: 372px;
+}
+.place {
+  left: 150px;
+  top: 391px;
+}
+.vid {
+  left: 80px;
+  top: 50px;
+}
+.date_vid {
+  left: 74px;
+  top: 111px;
+}
+.kod {
+  left: 210px;
+  top: 111px;
+}
+.img {
+  left: 24px;
+  top: 322px;
+}
+/* #endregion */
+
+/* #region таблица */
+table.catalog {
+  background-image: url('img/фон.jpg');
+}
+
+table.catalog td,
+table.catalog th {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* #endregion*/

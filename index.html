@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кот Коржик — главная</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Кот Коржик</h1>
+      <p>Учебный сайт о моём коте</p>
+    </header>
+
+    <nav>
+      <a href="index.html"
+        ><img
+          src="img/коржик (5).jpg"
+          alt="На главную"
+          width="30"
+          height="30"
+          style="object-fit: cover"
+      /></a>
+      | <a href="index.html" class="active">Главная</a> |
+      <a href="about.html">О Коржике</a> |
+      <a href="about.html#food">Любимая еда Коржика</a> |
+      <a href="gallery.html">Галерея и таблица</a> |
+      <a href="forms.html">Формы</a> | <a href="dom_js.html">DOM_JS</a> |
+      <a href="latin.html">Изменение кириллицы</a> |
+      <a href="algorithm.html">Алгоритм</a> |
+      <a href="https://t.me/rrrimnom" target="_blank" rel="noopener"
+        >Хочу увидеть больше фото и видео с Коржиком!</a
+      >
+    </nav>
+    <hr />
+
+    <main>
+      <h2 id="top">Добро пожаловать!</h2>
+      <p>
+        Этот сайт знакомит вас с моим замечательным котиком по имени Коржик.
+      </p>
+      <p>
+        <a href="about.html">Перейти к подробной информации о Коржике</a> ·
+        <a href="gallery.html">Открыть галерею</a> ·
+        <a href="#sections">К разделам этой страницы</a>
+      </p>
+
+      <!-- семантический тег для обозначения блока с картинкой -->
+      <figure>
+        <img
+          src="img/коржик (1).jpg"
+          alt="Коржик с кулоном-тыквой"
+          width="600"
+        />
+        <figcaption><i>Коржик любит украшения.</i></figcaption>
+      </figure>
+
+      <h2 id="sections">Разделы сайта</h2>
+
+      <ol>
+        <li>
+          <a href="about.html">О Коржике</a>
+          <ul>
+            <li><a href="about.html#food">Любимая еда</a></li>
+            <li><a href="about.html#activities">Любимые занятия</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="gallery.html">Галерея и таблица</a>
+          <ul>
+            <li><a href="gallery.html#photos">Фотографии</a></li>
+            <li><a href="gallery.html#catalog">Таблица любимых лакомств</a></li>
+          </ul>
+        </li>
+        <li><a href="forms.html">Формы обратной связи</a></li>
+        <li>
+          Практические задания по DOM и JavaScript
+          <ul>
+            <li><a href="dom_js.html">Считываем информацию из DOM</a></li>
+            <li>
+              <a href="latin.html">Изменяем кириллицу на латиницу по клику</a>
+            </li>
+            <li><a href="algorithm.html">Решение алгоритмической задачи</a></li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Внешние ресурсы</h2>
+      <ul>
+        <li>
+          <a
+            href="https://petstory.ru/knowledge/cats/"
+            target="_blank"
+            rel="noopener"
+            >Всё, что нужно знать о кошках</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://petobzor.com/rejting-kormov-dlya-koshek/"
+            target="_blank"
+            rel="noopener"
+            >Какой корм для кошек выбрать?</a
+          >
+        </li>
+      </ul>
+      <p><a href="#top">К началу страницы ↑</a></p>
+    </main>
+    <footer>
+      <hr />
+      <p>Учебный проект по HTML и JavaScript.</p>
+      <p><a href="index.html">Вернуться на главную</a></p>
+    </footer>
+  </body>
+</html>

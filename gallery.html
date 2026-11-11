@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея и таблица</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Кот Коржик</h1>
+      <p>Учебный сайт о моём коте</p>
+    </header>
+
+    <nav>
+      <a href="index.html"
+        ><img
+          src="img/коржик (5).jpg"
+          alt="На главную"
+          width="30"
+          height="30"
+          style="object-fit: cover"
+      /></a>
+      | <a href="index.html">Главная</a> | <a href="about.html">О Коржике</a> |
+      <a href="about.html#food">Любимая еда Коржика</a> |
+      <a href="gallery.html" class="active">Галерея и таблица</a> |
+      <a href="forms.html">Формы</a> | <a href="dom_js.html">DOM_JS</a> |
+      <a href="latin.html">Изменение кириллицы</a> |
+      <a href="algorithm.html">Алгоритм</a> |
+      <a href="https://t.me/rrrimnom" target="_blank" rel="noopener"
+        >Хочу увидеть больше фото и видео с Коржиком!</a
+      >
+    </nav>
+    <hr />
+
+    <main>
+      <h2 id="top">Галерея Коржика</h2>
+      <p>
+        <a href="#photos">Фотографии</a> | <a href="#catalog">Таблица</a> |
+        <a href="#top">К началу</a>
+      </p>
+
+      <h2 id="photos">Фотографии</h2>
+
+      <p>
+        Нажмите на миниатюру: большое изображение (600×400) откроется в новом
+        окне по центру.
+      </p>
+
+      <table border="1" cellpadding="8">
+        <tr>
+          <td align="center">
+            <a href="big_1.html" target="_blank" rel="noopener"
+              ><img
+                src="img/коржик (2).jpg"
+                alt="Миниатюра Коржика у окна"
+                width="100"
+            /></a>
+            <br />Коржик у окна
+          </td>
+          <td align="center">
+            <a href="big_3.html" target="_blank" rel="noopener"
+              ><img
+                src="img/коржик (4).jpg"
+                alt="Миниатюра: Коржик на полочке"
+                width="100"
+            /></a>
+            <br />Коржик на полочке
+          </td>
+          <td align="center">
+            <a href="big_6.html" target="_blank" rel="noopener"
+              ><img
+                src="img/коржик (7).jpg"
+                alt="Миниатюра: Коржик на лестнице"
+                width="100"
+            /></a>
+            <br />Коржик на лестнице
+          </td>
+        </tr>
+      </table>
+
+      <!-- <figure>
+        <img
+          src="img/коржик (5).jpg"
+          alt="Коржик любит ползать по полкам под потолком."
+          width="600"
+        />
+        <figcaption>
+          <i>Коржик любит ползать по полкам под потолком.</i>
+        </figcaption>
+      </figure> -->
+
+      <h2 id="catalog">Таблица любимых лакомств</h2>
+      <table class="catalog" border="1" cellpadding="8">
+        <caption>
+          Краткий каталог
+        </caption>
+
+        <tr>
+          <th>Изображение</th>
+          <th>Описание</th>
+          <th>Подробнее</th>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="img/лакомства.jfif" alt="Дримис" width="80" />
+          </td>
+          <td>Подушечки Дримис</td>
+          <td>
+            <a href="about.html#food"
+              >Одно из любимых занятий Коржика — это кушать Дримис.</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="img/лакомства.webp" alt="Звёздочки" width="80" />
+          </td>
+          <td>Звёздочки для здоровья зубов</td>
+          <td>
+            <a
+              href="https://www.ozon.ru/product/lakomstvo-ranova-dlya-koshek-sublimirovannoe-zvezdochka-dlya-zubov-s-kuritsey-i-yachmenem-36-g-2970040978/?at=1vyq1UFvrzBcz_q8gaQ1oAK_oDoTroDJ"
+              target="_blank"
+              rel="noopener"
+              >Смотреть в онлайн-магазине</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="img/лакомства.jpg" alt="Колбаски" width="80" />
+          </td>
+          <td>Колбаски</td>
+          <td>
+            <a
+              href="https://www.ozon.ru/product/lakomstva-dlya-koshek-i-kotyat-brit-premium-kolbaski-s-govyadinoy-i-pechenyu-36-g-5068853767/?at=1vyq1Sz9z18G4FNZKxumk6G5DfuRuxrA"
+              target="_blank"
+              rel="noopener"
+              >Смотреть в онлайн-магазине</a
+            >
+          </td>
+        </tr>
+      </table>
+      <p><a href="#top">К началу страницы ↑</a></p>
+    </main>
+    <footer>
+      <hr />
+      <p>Учебный проект по HTML и JavaScript.</p>
+      <p><a href="index.html">Вернуться на главную</a></p>
+    </footer>
+  </body>
+</html>
